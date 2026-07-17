@@ -1,0 +1,20 @@
+/* Right-aligned date/location spans on the CV page (mirrors the PDF layout). */
+.cvr {
+  float: right;
+  color: #555;
+}
+
+/* On phones, floated dates interleave awkwardly with wrapped text — stack them instead. */
+@media (max-width: 576px) {
+  .cvr {
+    float: none;
+    display: block;
+    color: #777;
+    font-size: 0.9em;
+  }
+}
+
+/* CV page: hide the "PUBLISHED <date>" title meta (the PDF carries its own Updated header). */
+.quarto-title-meta {
+  display: none;
+}
