@@ -141,12 +141,17 @@ ul.task-list li input[type="checkbox"] {
 
 <!-- Contacts: unless-format="typst" so the line reaches BOTH html and docx.
      The typst PDF builds its own contact line from cv-contacts metadata, so it is
-     excluded here to avoid printing it twice. The Download-PDF button stays html-only. -->
-<p><a href="mailto:yizhi@yizhilia.org">yizhi@yizhilia.org</a> · <a href="https://scholar.google.com/citations?user=onCw2qgAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://orcid.org/0000-0002-7475-496X">ORCID</a> · <a href="https://www.linkedin.com/in/yizhi-liang-heor/">LinkedIn</a></p>
+     excluded here to avoid printing it twice. The Download-PDF button stays html-only.
+     custom-style="ContactLine" targets the docx style (centered, thick rule below,
+     defined in cv/_reference.docx); the html writer passes the attribute through
+     harmlessly. Keep the item set in sync with cv-contacts in _quarto.yml. -->
+<div data-custom-style="ContactLine">
+<p><a href="mailto:yizhi@yizhilia.org">yizhi@yizhilia.org</a> · <a href="https://yizhilia.org/">yizhilia.org</a> · <a href="https://scholar.google.com/citations?user=onCw2qgAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://orcid.org/0000-0002-7475-496X">ORCID</a> · <a href="https://www.linkedin.com/in/yizhi-liang-heor/">LinkedIn</a></p>
+</div>
 <p><a href="Yizhi-Liang-CV.pdf" class="btn btn-outline-primary btn-sm">Download PDF</a></p>
 <section id="summary" class="level2">
 <h2 class="anchored" data-anchor-id="summary">Summary</h2>
-<p>PhD student in Health Economics at USC with HEOR experience at Merck and Stratevi and a peer-reviewed publication record in health economics, health policy, and epidemiology that includes first-author work in <em>Value in Health</em>. Applied depth in health-economic modeling (cost-effectiveness, cost-utility, and budget-impact models, value-of-information analysis), real-world evidence and causal inference, HTA and reimbursement pathways, and AI-assisted QC of economic models, with disease-area work in oncology, infectious disease, cardiometabolic and chronic disease, and rare pediatric conditions.</p>
+<p>PhD student in Health Economics at USC with industry HEOR experience in both pharmaceutical and consulting companies and multiple first-author peer-reviewed publications in health economics, health policy, and epidemiology. Applied depth in health-economic modeling (cost-effectiveness, cost-utility, and budget-impact models, value-of-information analysis), real-world evidence and causal inference, HTA and reimbursement pathways, and AI integration in HEOR applications, with disease-area work in oncology, infectious disease, cardiometabolic and chronic disease, and rare pediatric conditions.</p>
 </section>
 <section id="education" class="level2">
 <h2 class="anchored" data-anchor-id="education">Education</h2>
