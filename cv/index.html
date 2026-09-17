@@ -42,7 +42,7 @@ ul.task-list li input[type="checkbox"] {
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-15634bcf2e68342d4ad2dfa704d543f6.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-29cdbefdb627c25a34878b5e2c43b22c.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-3151e32f04b0ee0bfb1ca202c1e01cd7.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -149,8 +149,13 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="mailto:yizhi@yizhilia.org">yizhi@yizhilia.org</a> · <a href="https://yizhilia.org/">yizhilia.org</a> · <a href="https://scholar.google.com/citations?user=onCw2qgAAAAJ&amp;hl=en">Google Scholar</a> · <a href="https://orcid.org/0000-0002-7475-496X">ORCID</a> · <a href="https://www.linkedin.com/in/yizhi-liang-heor/">LinkedIn</a></p>
 </div>
 <p><a href="Yizhi-Liang-CV.pdf" class="btn btn-outline-primary btn-sm">Download PDF</a></p>
-<section id="summary" class="level2">
-<h2 class="anchored" data-anchor-id="summary">Summary</h2>
+<!-- Summary: the shared paragraph by default. A per-application render passes a metadata file
+     (kept OUTSIDE this repo, in the application's own folder) that sets `tailored: true` plus
+     `tailored-summary`; then this block prints that text instead of the shared include.
+     `when-meta` tests a BOOLEAN key (a string is never truthy, measured on Quarto 1.9.38), hence two keys.
+     The base/site/full/academic renders never set `tailored`. Driver: cv/render-tailored.sh -->
+<section id="summary-1" class="level2">
+<h2 class="anchored" data-anchor-id="summary-1">Summary</h2>
 <p>PhD student in Health Economics at USC with industry HEOR experience in both pharmaceutical and consulting companies and multiple first-author peer-reviewed publications in health economics, health policy, and epidemiology. Applied depth in health-economic modeling (cost-effectiveness, cost-utility, and budget-impact models, value-of-information analysis), real-world evidence and causal inference, HTA and reimbursement pathways, and AI integration in HEOR applications, with disease-area work in oncology, infectious disease, cardiometabolic and chronic disease, and rare pediatric conditions.</p>
 </section>
 <section id="education" class="level2">
