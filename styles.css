@@ -18,3 +18,96 @@
 .quarto-title-meta {
   display: none;
 }
+
+/* Homepage block "My work in the current policy landscape" (data/policy-context.ejs). */
+.pc-jump {
+  display: inline-block;
+  margin-top: 0.25rem;
+  padding: 0.35rem 0.9rem;
+  border: 1px solid #2761e3;
+  border-radius: 999px;
+  color: #2761e3;
+  font-size: 0.95em;
+  text-decoration: none;
+}
+.pc-jump:hover {
+  background: #2761e3;
+  color: #fff;
+}
+#policy-landscape {
+  margin-top: 2.5rem;
+}
+.pc-asof {
+  color: #6c757d;
+  font-size: 0.9em;
+  margin-bottom: 0.5rem;
+}
+.pc-theme {
+  margin: 1.75rem 0 0.6rem;
+  font-size: 1.05rem;
+  font-weight: 700;
+  letter-spacing: 0.02em;
+  color: #2761e3;
+}
+.pc-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin-bottom: 0.9rem;
+  border: 1px solid #dee2e6;
+  border-radius: 8px;
+  overflow: hidden;
+}
+.pc-policy,
+.pc-work {
+  padding: 0.9rem 1.1rem;
+}
+.pc-work {
+  background: #f3f6fc;
+  border-left: 3px solid #2761e3;
+}
+.pc-label {
+  margin-bottom: 0.3rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: #6c757d;
+}
+.pc-title {
+  display: block;
+  margin-bottom: 0.35rem;
+  font-weight: 600;
+  line-height: 1.35;
+}
+.pc-title .bi {
+  font-size: 0.75em;
+}
+.pc-row p {
+  margin-bottom: 0.4rem;
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+.pc-links a {
+  display: inline-block;
+  margin-right: 0.9rem;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+.pc-plugin {
+  margin-top: 1.25rem;
+  padding: 0.8rem 1.1rem;
+  border: 1px dashed #adb5bd;
+  border-radius: 8px;
+  font-size: 0.95rem;
+}
+
+/* Phones: stack the policy half above the related-work half. */
+@media (max-width: 576px) {
+  .pc-row {
+    grid-template-columns: 1fr;
+  }
+  .pc-work {
+    border-left: none;
+    border-top: 3px solid #2761e3;
+  }
+}
