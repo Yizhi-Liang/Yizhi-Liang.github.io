@@ -1,4 +1,3 @@
-/* Right-aligned date/location spans on the CV page (mirrors the PDF layout). */
 .cvr {
   float: right;
   color: #555;
@@ -101,7 +100,6 @@
   font-size: 0.95rem;
 }
 
-/* Phones: stack the policy half above the related-work half. */
 @media (max-width: 576px) {
   .pc-row {
     grid-template-columns: 1fr;
